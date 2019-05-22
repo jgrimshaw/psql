@@ -8,8 +8,6 @@ const knex = require('knex')({
     }
 });
 
-console.log('this is redicilous!')
-
 const firstName = process.argv[2];
 
 knex.select('first_name', 'last_name', 'birthdate')
